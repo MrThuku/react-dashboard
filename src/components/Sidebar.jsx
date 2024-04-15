@@ -13,7 +13,7 @@ const Sidebar = () => {
     <>
       {activeMenu && (
         <>
-          <div className=" flex flex-col bg-sky-200  w-80 p-7 sm:  md:overflow-hidden overflow-auto md:hover:overflow-auto  z-auto ">
+          <div className=" flex flex-col bg-sky-200  w-80 p-7 sm:  md:overflow-hidden    ">
             <div className="">
               <div className="flex flex-row justify-between">
                 <div className="flex">

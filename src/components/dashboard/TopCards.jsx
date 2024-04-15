@@ -9,9 +9,9 @@ const TopCards = () => {
   
 
   return (
-    <div className="mt-10">
+    <div>
       <div className="flex flex-wrap lg:flex-nowrap justify-evenly ">
-        <div className="bg-white h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 ">
+         <div className="bg-white h-44 rounded-xl w-full lg:w-80 p-8    pt-9 m-3 ">
           <div className="flex justify-between items-center" >
             <div>
               <p className="font-bold text-gray-400">Earnings</p>

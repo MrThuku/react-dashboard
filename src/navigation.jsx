@@ -8,6 +8,8 @@ import {
   HiOutlineQuestionMarkCircle,
   HiOutlineCog,
 } from "react-icons/hi";
+import { CiCalendarDate } from "react-icons/ci";
+
 
 export const DashboardLinks = [
   {
@@ -31,24 +33,12 @@ export const DashboardLinks = [
   },
 
   {
-    key: "messages",
-    label: "Messages",
-    path: "/messages",
-    icon: <HiOutlineAnnotation />,
+    key: "calendar",
+    label: "Calendar",
+    path: "/calendar",
+    icon: <CiCalendarDate />
+    
   },
 ];
 
-// export const DASHBOARD_SIDEBAR_BOTTOM_LINKS = [
-// 	{
-// 		key: 'settings',
-// 		label: 'Settings',
-// 		path: '/settings',
-// 		icon: <HiOutlineCog />
-// 	},
-// 	{
-// 		key: 'support',
-// 		label: 'Help & Support',
-// 		path: '/support',
-// 		icon: <HiOutlineQuestionMarkCircle />
-// 	}
-// ]
+

@@ -9,6 +9,7 @@ import Dashboard from "./components/Dashboard.jsx";
 import Products from "./components/Products.jsx";
 import { ContextProvider } from "./context/ContextProvider.jsx";
 import Customers from "./components/Customers.jsx";
+import Calendar from "./components/Calendar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,12 @@ const router = createBrowserRouter([
       {
         path: 'customers',
         element: <Customers/>,
+      },
+      {
+        path: 'calendar',
+        element: <Calendar/>,
       }
+
     ],
   },
 ]);

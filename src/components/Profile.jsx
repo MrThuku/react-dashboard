@@ -1,8 +1,11 @@
 import React from "react";
-import { profileData } from "../data/dummyData";
+import { ProfileData } from "../data/dummyData";
 import { MdOutlineCancel } from "react-icons/md";
 import { useStateContext } from "../context/ContextProvider";
 import avatar from "../assets/alison-wang-mou0S7ViElQ-unsplash.jpg";
+import { BsCurrencyDollar, BsShield } from "react-icons/bs";
+import { FiCreditCard } from "react-icons/fi";
+
 
 const Profile = () => {
   const { setIsClicked } = useStateContext();
@@ -30,7 +33,7 @@ const Profile = () => {
         </div>
       </div>
       <div>
-        {profileData.map((item, index) => (
+        {ProfileData.map((item, index) => (
           <div
             key={index}
             className="flex gap-5 border-b-1 border-color p-4  hover:bg-blue-300 cursor-pointer "
@@ -40,7 +43,9 @@ const Profile = () => {
               style={{ color: item.iconColor, backgroundColor: item.iconBg }}
               className=" text-xl rounded-lg p-3 hover:bg-light-gray"
             >
-              {item.icon}
+              {item.title === 'My Profile' && <BsCurrencyDollar />  }
+              {item.title === 'My Inbox' &&  <BsShield />}
+              {item.title === 'My Tasks' && <FiCreditCard /> }
             </button>
 
             <div>

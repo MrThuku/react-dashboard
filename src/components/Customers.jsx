@@ -71,7 +71,7 @@ export default function StickyHeadTable() {
   return (
     <Paper sx={{ width: "100%", overflow: "hidden ", borderRadius:'1rem' }}>
       <div className=" p-3 font-bold text-3xl"> Customers</div>
-      <TableContainer sx={{ maxHeight: 440 }}>
+      <TableContainer sx={{ maxHeight: 560 , maxWidth: '100%' }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
@@ -80,10 +80,7 @@ export default function StickyHeadTable() {
             <TableCell align="center">Age</TableCell>
             <TableCell align="center">Email </TableCell>
             <TableCell align="center"> Phone</TableCell>
-            <TableCell align="center">Address</TableCell>
-            
-
-            
+            <TableCell align="center">Address</TableCell>      
             </TableRow>
           </TableHead>
           <TableBody>

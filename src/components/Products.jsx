@@ -26,13 +26,14 @@ export default function BasicTable() {
   };
 
   return (
-    
-    <TableContainer component={Paper}>
+    // <div className=" w-[70rem] m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+
+    <TableContainer component={Paper} sx={{maxWidth: '100%', maxHeight: '100%'}}>
       <div className=" p-5 text-3xl font-bold ">Products</div>
     
-      <Table sx={{ minWidth: 650,}} aria-label="simple table">
+      <Table sx={{minWidth:650}} aria-label="simple table">
         <TableHead >
-          <TableRow  >
+          <TableRow>
             <TableCell sx={{ fontWeight:' bold'}}>Image</TableCell>
             <TableCell align="right" sx={{ fontWeight:' bold'}}>Item</TableCell>
             <TableCell align="center" sx={{ fontWeight:' bold'}}> Descption </TableCell>
@@ -73,5 +74,6 @@ export default function BasicTable() {
         </TableBody>
       </Table>
     </TableContainer>
+    // </div>
   );
 }
